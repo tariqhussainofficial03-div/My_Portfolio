@@ -4,7 +4,7 @@ A modern and responsive portfolio website built with HTML5 and CSS3 to showcase 
 
 ##  Live Demo
 
-Coming Soon
+ https://tariqhussainofficial03-div.github.io/My_Portfolio/
 
 ##  Features
 
