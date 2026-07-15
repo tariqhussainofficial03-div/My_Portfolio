@@ -2,11 +2,11 @@
 
 A modern and responsive portfolio website built with HTML5 and CSS3 to showcase my skills, projects, and web development journey.
 
-## 🚀 Live Demo
+##  Live Demo
 
 Coming Soon
 
-## 📌 Features
+##  Features
 
 - Responsive Design
 - Modern User Interface
@@ -15,7 +15,7 @@ Coming Soon
 - Projects Section
 - Contact Section
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
@@ -30,11 +30,11 @@ My_Portfolio/
 └── img/
 ```
 
-## 🎯 Purpose
+##  Purpose
 
 This portfolio was created to demonstrate my frontend development skills and provide a central place to showcase my projects and learning progress.
 
-## 👨‍💻 Author
+##  Author
 
 Tarique Hussain
 
