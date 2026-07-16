@@ -16,16 +16,16 @@ body{
     background: #050816;
 }
  header{
-    width: 100%;
+    max-width: 1200px;
     height: 80px;
+    margin: auto;
     box-shadow: 0px 3px 1px 0px #0B1023;
     display: flex;
     align-items: center;
  }
  .headerSection{
-    width: 1200px;
+    width: 100%;
     height: 94%;
-    margin: auto;
     display: grid;
     grid-template-columns: 40% 60%;
  }
@@ -36,7 +36,7 @@ body{
     font-weight: 500;
     color: #fff;    
  }
-.navbaricon i{
+.navbaricon,i{
    display: none;
 }
  .navbar{
@@ -70,7 +70,7 @@ body{
 
 
 #heroSection{
-    width: 1200px;
+    max-width: 1200px;
     height: 400px;
     margin-top: 60px !important;
     margin-bottom: 200px !important;
@@ -130,7 +130,7 @@ body{
    margin-bottom: 15px;
 }
 .herobutton1{
-   width: 180px;
+    width: 180px;
     height: 58px;
     padding: 35px, 45px;
     border-radius: 8px;
@@ -179,7 +179,7 @@ body{
 
 
 #AboutSection{
-    width: 1200px;
+    max-width: 1200px;
     height: 535px;
     margin: auto;
     display: grid;
@@ -262,7 +262,7 @@ body{
 
 
 #SkillSection{
-   width: 1200px;
+   max-width: 1200px;
    height: auto;
    margin: auto;
    scroll-margin-top: 150px;
@@ -389,7 +389,7 @@ sup{
    padding: 0px, 0px !important;
 }
 .featureImageSection{
-   width: 1200px;
+   width: 100%;
    margin: auto;
    display: grid;
    grid-template-columns: repeat(3,1fr);
@@ -453,7 +453,7 @@ sup{
 /* -----------Profile Section------------ */
 
  #profileDetailSection{
-   width: 1200px;
+   max-width: 1200px;
    height: auto;
    margin: auto;
    border: 1px solid #f3f2f862;
@@ -490,7 +490,7 @@ sup{
 
 
 #testimonialSection{
-   width: 1200px;
+   max-width: 1200px;
    margin: auto;
    height: auto;
    margin-bottom: 100px;
@@ -575,7 +575,7 @@ sup{
 
 
 #contectUsSection{
-   width: 1200px;
+   max-width: 1200px;
    margin: auto;
    height: auto;
    display: grid;
@@ -685,7 +685,7 @@ textarea, input::placeholder{
 
 
 .footer{
-   width: 1200px;
+   max-width: 1200px;
    height: auto;
    margin: auto;
    color: #ffffff;
@@ -880,9 +880,6 @@ body{
 ========================= */
 
 @media screen and (max-width:767px){
-body{
- overflow-x: hidden;
-}
 .headerSection,
 #heroSection,
 #AboutSection,
@@ -936,14 +933,25 @@ body{
 }
 
 .introInnerSectionm h2{
-    font-size:45px;
+    font-size:35px;
+   padding-bottom: 5px;
 }
-
 .herHeading2{
-    font-size:28px;
-    line-height:40px;
+    font-size:22px !important;
+    line-height:28px !important;
+    padding-top: 10px;
 }
-
+.heroParaSection{
+   padding-top: 8px;
+   padding-bottom: 10px;
+}
+.herobuttons{
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+.heroiconsSection{
+   margin-block: 15px;
+}
 #AboutSection{
     grid-template-columns:1fr;
     height:auto;
@@ -953,22 +961,49 @@ body{
 #AboutSection .AboutimagSection>img{
    height: 100%;
 }
+.aboutHeading{
+   font-size: 20px !important;
+   line-height: 28px !important;
+}
+.aboutParaSection{
+   font-size: 12px !important;
+   line-height: 22px !important;
+}
 .skill{
     grid-template-columns: repeat(2,1fr);
     margin-bottom: 50px !important;
 }
+.headingSection h4{
+    font-size: 24px;
+}
 .html>img{
    position: relative;
-   left: 17%;
+   left: 18%;
 }
 .htmls{
-   margin-left: 5px;
+   margin-left: 8px;
+   margin-top: 6px;
 }
 .Css{
-   margin-left: 10px;
+   margin-left: 20px;
+   margin-top: 6px;
 }
 .JSreact{
    margin-top: 8px;
+   margin-left: 7px;
+}
+.react{
+   margin-left: 25px;
+   margin-top: 3px;
+}
+.tailwind{
+   margin-left: 9px;
+   margin-top: 1px;
+}
+sup{
+   position: relative;
+   left: 80%;
+   font-size: 10px;
 }
 #featurePojectSection{
      margin-bottom: 50px !important;
@@ -978,11 +1013,25 @@ body{
     grid-template-columns:1fr;
   
 }
+.ProjectHeading h4{
+   font-size: 28px;
+}
 .catagoryBtn{
    display: flex;
    gap: 10px;
    flex-wrap: wrap;
    justify-content: center;
+}
+.catagoryBtn button{
+   width: 120px;
+    height: 28px;
+    padding: 35px, 45px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.AllBtn,.UIUX{
+   width: 60px !important;
 }
 .clientReviewSection{
     grid-template-columns:1fr;
@@ -995,24 +1044,75 @@ body{
 }
 
 .profileSection{
-    width:47%;
+   display: flex;
+    width: 40%;
     border-right: none;
-    padding-block:20px;
-    padding-left: 20px;
+    padding-block: 5px;
+}
+.profileSection i{
+   font-size: 18px;
+   position: relative;
+   left: 10%;
+}
+.profileText {
+   position: relative;
+   left: 18%;
+}
+.profileText p{
+   font-size: 11px;
+}
+.Ecommerce:hover{
+   transform:none;
 }
 
+.clientReview:hover{
+   transform:none;
+}
+.testimonialHeading h4{
+   font-size: 23px;
+}
+.reviewSection1 p{
+   font-size: 12px;
+   line-height: 22px;
+}
 #contectUsSection{
     grid-template-columns:1fr;
     margin-bottom: 50px !important;
 }
-
+.reviewSection2 h3{
+   font-size: 17px;
+}
+.reviewSection2 p{
+   font-size: 12px;
+}
+.reviewName {
+    text-align: start;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    line-height: 22px;
+}
 .contact{
     border-right:none;
     border-bottom:1px solid #2b0769;
     padding-bottom:20px;
     
 }
-
+.contact h4 {
+   font-size: 22px;
+   line-height: 30px;
+   font-weight: 700;
+}
+.contactsData p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.contactsData p>i{
+   font-size: 25px;
+}
+.contactsData {
+    margin-top: 23px;
+}
 .contactFormSection{
     width:100%;
     padding-left:0;
@@ -1021,17 +1121,35 @@ body{
 
 .nameEmailSection{
     flex-direction:column;
+    gap: 0px;
 }
 
 .nameEmailSection input{
     width:100%;
 }
-
+.contactFormSection button{
+   margin-top: 10px;
+}
 .footerMidSection{
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    row-gap: 5%;
+    margin-left: 0px;
 }
 .footerBox{
    margin-bottom: 25px !important;
 } 
+.heroiconsSection {
+    gap: 10PX;
+    margin-block: 10px;
+}
+.footerBox p {
+   font-size: 12px;
+}
+.footerBox ul li>a{
+   font-size: 12px;
+}
+.footer>p{
+   font-size: 14px;
+}
 }
