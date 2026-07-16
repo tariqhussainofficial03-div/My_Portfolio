@@ -40,7 +40,7 @@ Tarique Hussain
 
 Frontend Developer
 
-## 📫 Connect With Me
+##  Connect With Me
 
 LinkedIn:https://www.linkedin.com/in/tarique-hussain-14b118416/
 
